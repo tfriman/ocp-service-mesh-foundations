@@ -1,5 +1,6 @@
 package com.redhat.developer.demos.partner;
 
+import io.jaegertracing.Configuration;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.client.RestTemplateBuilder;
@@ -20,10 +21,9 @@ public class PartnerApplication extends WebMvcConfigurerAdapter {
 		return restTemplateBuilder.build();
 	}
 
-	/*
 	@Bean
 	public io.opentracing.Tracer tracer() {
 		return Configuration.fromEnv().getTracer();
 	}
-	*/
+
 }
